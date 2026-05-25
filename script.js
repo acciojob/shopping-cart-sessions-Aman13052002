@@ -38,7 +38,7 @@ function renderCart() {
 }
 
 // Add item to cart
-function addToCart(productId) {
+function addToCart(product) {
 	cart.push(product);
 	sessionStorage.setItem("cart",JSON.stringify(cart));
 	renderCart();
